@@ -477,8 +477,8 @@ static void gtk_im_context_hime_set_cursor_location (GtkIMContext *context,
     if (context_xim->hime_ch) {
         hime_im_client_set_cursor_location (
             context_xim->hime_ch,
-            area->x,
-            area->y + area->height);
+            area->x * 2,
+            area->y * 2 + area->height);
     }
 }
 
